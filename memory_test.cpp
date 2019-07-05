@@ -46,7 +46,7 @@ char *allocate(size_t block_size) {
         log("Failed to allocate memory");
     } else{
         log("Memory allocated, filling with random characters");
-        for (int i = 0; i < block_size; ++i) {
+        for (size_t i = 0; i < block_size; ++i) {
             block[i] = rand() % 256;
         }
     }
